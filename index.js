@@ -106,7 +106,7 @@ array.pop(array);
 return array;
 }
 
-console.log ('task 4:', removeLastFlavor(originalFlavors);
+console.log ('task 4:', removeLastFlavor(originalFlavors)
 
 
 
