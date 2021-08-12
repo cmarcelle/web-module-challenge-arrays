@@ -68,7 +68,6 @@ function is31Flavors(array){
    return true;
 }else{
   return false;
-// if array.lenghth is 31 return true else return false //
   }
 }
 console.log('task 2:', is31Flavors(originalFlavors));
@@ -106,7 +105,7 @@ array.pop(array);
 return array;
 }
 
-console.log ('task 4:', removeLastFlavor(originalFlavors)
+console.log('task 4:', removeLastFlavor(originalFlavors));
 
 
 
@@ -121,7 +120,7 @@ Use the getFlavorByIndex function below to do the following:
 */
 
 // 1 - add array, 2 - add index //
-function getFlavorByIndex (array, number){
+function getFlavorByIndex(array,number){
   return array[number];
 }
 
@@ -140,17 +139,16 @@ Use the removeFlavorByName function below to do the following:
 */
 
 //2 parameters - array, string //
-function removeFlavorByName(/*your code here*/){
-  //loop through the array and check each index for the string//
-  //conditional that checks for an exact match ===//
-  //if the item matches the string, remove the item at that specific index .splice - index (i) and the number of items to delete//
-
-  //outside of the loop return the array//
-  /*your code here*/
-
+function removeFlavorByName(array, flavor){
+  for(let i=0; i< array.length; i++){
+    if(array[i] === flavor){
+      array.splice(i,1);
+    }  
+}
+ return array; 
 }
 
-
+console.log('task6:', removeFlavorByName(originalFlavors, 'Rockey Road'));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
